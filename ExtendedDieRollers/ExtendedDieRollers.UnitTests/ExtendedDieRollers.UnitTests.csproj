@@ -83,9 +83,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExtendedDieRoller.PCL\ExtendedDieRoller.PCL.csproj">
-      <Project>{1caa7ec6-1001-49f9-8363-a8711e30cc1c}</Project>
-      <Name>ExtendedDieRoller.PCL</Name>
+    <ProjectReference Include="..\..\OnePlat.DiceNotation.ExtendedDieRollers\OnePlat.DiceNotation.ExtendedDieRollers\OnePlat.DiceNotation.ExtendedDieRollers.csproj">
+      <Project>{d7738c8f-230e-4d26-8c7c-fab0b68d1e65}</Project>
+      <Name>OnePlat.DiceNotation.ExtendedDieRollers</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

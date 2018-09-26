@@ -6,12 +6,12 @@ using System;
 namespace OnePlat.DiceNotation.UnitTests.DieRoller
 {
     /// <summary>
-    /// Summary description for SecureRandomDieRoller
+    /// Summary description for CryptoDieRoller
     /// </summary>
     [TestClass]
-    public class SecureRandomDieRollerTests
+    public class CryptoDieRollerTests
     {
-        public SecureRandomDieRollerTests()
+        public CryptoDieRollerTests()
         {
         }
 
@@ -38,24 +38,24 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         #endregion
 
         [TestMethod]
-        public void SecureRandomDieRoller_DefaultConstructorTest()
+        public void CryptoDieRoller_DefaultConstructorTest()
         {
             // setup test
 
             // run test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // validate results
             Assert.IsNotNull(die);
             Assert.IsInstanceOfType(die, typeof(IDieRoller));
-            Assert.IsInstanceOfType(die, typeof(SecureRandomDieRoller));
+            Assert.IsInstanceOfType(die, typeof(CryptoDieRoller));
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_Rolld20Test()
+        public void CryptoDieRoller_Rolld20Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(20);
@@ -65,10 +65,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_Rolld4Test()
+        public void CryptoDieRoller_Rolld4Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(4);
@@ -78,10 +78,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_Rolld6Test()
+        public void CryptoDieRoller_Rolld6Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(6);
@@ -91,10 +91,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_Rolld8Test()
+        public void CryptoDieRoller_Rolld8Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(8);
@@ -104,10 +104,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_Rolld12Test()
+        public void CryptoDieRoller_Rolld12Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(12);
@@ -117,10 +117,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_Rolld100Test()
+        public void CryptoDieRoller_Rolld100Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(100);
@@ -130,10 +130,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_Rolld7Test()
+        public void CryptoDieRoller_Rolld7Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(7);
@@ -143,10 +143,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_RollFudgeTest()
+        public void CryptoDieRoller_RollFudgeTest()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             int result = die.Roll(3, -2);
@@ -156,10 +156,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_RollMultipleFudgeTest()
+        public void CryptoDieRoller_RollMultipleFudgeTest()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             for (int i = 0; i < 100; i++)
@@ -172,10 +172,10 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_RollThousanD6Test()
+        public void CryptoDieRoller_RollThousanD6Test()
         {
             // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+            IDieRoller die = new CryptoDieRoller();
 
             // run test
             for (int i = 0; i < 1000; i++)
@@ -187,16 +187,16 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
             }
         }
 
-        [TestMethod]
-        public void SecureRandomDieRoller_RollErrorTest()
-        {
-            // setup test
-            IDieRoller die = new SecureRandomDieRoller();
+        //[TestMethod]
+        //public void CryptoDieRoller_RollErrorTest()
+        //{
+        //    // setup test
+        //    IDieRoller die = new CryptoDieRoller();
 
-            // run test
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() => die.Roll(0));
+        //    // run test
+        //    Assert.ThrowsException<ArgumentOutOfRangeException>(() => die.Roll(0));
 
-            // validate results
-        }
+        //    // validate results
+        //}
     }
 }

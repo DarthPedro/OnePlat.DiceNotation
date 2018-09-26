@@ -12,12 +12,12 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
     [TestClass]
     public class DieRollTrackerWithSecureRollerTests
     {
-        private IDieRollTracker tracker = new DieRollTracker();
-        private IDieRoller roller;
+        private readonly IDieRollTracker tracker = new DieRollTracker();
+        private readonly IDieRoller roller;
 
         public DieRollTrackerWithSecureRollerTests()
         {
-            this.roller = new SecureRandomDieRoller(this.tracker);
+            this.roller = new CryptoDieRoller(this.tracker);
         }
 
         #region Additional test attributes
@@ -61,7 +61,7 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
             Assert.AreEqual(5, data.Count);
             foreach (DieTrackingData e in data)
             {
-                Assert.AreEqual("SecureRandomDieRoller", e.RollerType);
+                Assert.AreEqual("CryptoDieRoller", e.RollerType);
                 Assert.AreEqual("12", e.DieSides);
                 AssertHelpers.IsWithinRangeInclusive(1, 12, e.Result);
             }

@@ -11,8 +11,8 @@
     <AssemblyName>DiceRoller.Win10</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.15063.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -30,7 +30,7 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
     <DocumentationFile>bin\x86\Debug\DiceRoller.Win10.XML</DocumentationFile>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <CodeAnalysisRuleSet>DiceRoller.Win10.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -171,13 +171,13 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>5.4.0</Version>
+      <Version>6.1.7</Version>
     </PackageReference>
     <PackageReference Include="OnePlat.DiceNotation">
-      <Version>1.0.5</Version>
+      <Version>2.0.2</Version>
     </PackageReference>
-    <PackageReference Include="OnePlat.DiceNotation.ExtendedDieRollers.PCL">
-      <Version>1.0.4</Version>
+    <PackageReference Include="OnePlat.DiceNotation.ExtendedDieRollers">
+      <Version>2.0.1</Version>
     </PackageReference>
     <PackageReference Include="WinRTXamlToolkit.UWP">
       <Version>2.3.0</Version>

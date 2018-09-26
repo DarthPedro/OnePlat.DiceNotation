@@ -30,9 +30,9 @@ namespace DiceRoller.Win10.Services
             {
                 roller = new RandomDieRoller(tracker);
             }
-            else if (type == typeof(SecureRandomDieRoller).ToString())
+            else if (type == typeof(CryptoDieRoller).ToString())
             {
-                roller = new SecureRandomDieRoller(tracker);
+                roller = new CryptoDieRoller(tracker);
             }
             else if (type == typeof(MathNetDieRoller).ToString())
             {

@@ -205,7 +205,7 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_ConstructorErrorTest()
+        public void CryptoDieRoller_ConstructorErrorTest()
         {
             // setup test
 
@@ -216,7 +216,7 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         }
 
         [TestMethod]
-        public void SecureRandomDieRoller_RollErrorTest()
+        public void CryptoDieRoller_RollErrorTest()
         {
             // setup test
             IDieRoller die = new MathNetDieRoller();

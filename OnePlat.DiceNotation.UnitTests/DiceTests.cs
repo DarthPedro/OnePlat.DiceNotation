@@ -434,5 +434,38 @@ namespace OnePlat.DiceNotation.UnitTests
             Assert.AreEqual(1, result.Results.Count);
             Assert.AreEqual(-2, result.Value);
         }
+
+        [TestMethod]
+        public void Dice_DiceConcat()
+        {
+            // setup test
+            IDice dice1 = new Dice();
+            IDice dice2 = new Dice();
+
+            // run test
+            IDice r1 = dice1.Dice(6, 4, choose: 3);
+            IDice r2 = dice2.Dice(8).Constant(5);
+            IDice result = dice1.Concat(dice2);
+
+            // validate results
+            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(IDice));
+            Assert.IsInstanceOfType(result, typeof(Dice));
+            Assert.AreEqual("4d6k3+1d8+5", result.ToString());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void Dice_DiceConcat_WithNullOther()
+        {
+            // setup test
+            IDice dice1 = new Dice();
+
+            // run test
+            IDice r1 = dice1.Dice(6, 4, choose: 3);
+            IDice result = dice1.Concat(null);
+
+            // validate results
+        }
     }
 }

@@ -31,7 +31,7 @@ namespace OnePlat.DiceNotation.DieRoller
     public interface IDieRollTracker
     {
         /// <summary>
-        /// Gets or sets the limit of roll data kept in the tracker.
+        /// Gets the limit of roll data kept in the tracker.
         /// </summary>
         int TrackerDataLimit { get; set; }
 

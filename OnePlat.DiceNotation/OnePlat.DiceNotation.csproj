@@ -1,19 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.4</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>DarthPedro</Authors>
     <Company />
     <Product>DiceNotation Parsing and Rolling</Product>
     <Description>Library to parse and roll any dice notation. Use this library in your applications to roll random dice without having to write all of the code yourself.</Description>
-    <Copyright>Copyright (c) 2017 DarthPedro. All rights reserved.</Copyright>
+    <Copyright>Copyright (c) 2018 DarthPedro. All rights reserved.</Copyright>
     <PackageLicenseUrl>https://github.com/DarthPedro/OnePlat.DiceNotation/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>Dice DiceNotation d20 DiceRolls DiceRoller</PackageTags>
     <PackageProjectUrl>https://github.com/DarthPedro/OnePlat.DiceNotation</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DarthPedro/OnePlat.DiceNotation</RepositoryUrl>
     <PackageReleaseNotes>Current release:
+Rebuild packages as .NET Standard 2.0 libraries.
+Removed dependency on StyleCop nuget.
+
+Release 1.0.5:
 * Add dice notation for keep lowest by using L token in the notation. Changed drop lowest notation to use P token.
 
 Release 1.0.4:
@@ -37,7 +41,7 @@ Release 1.0.1:
 * Added general purpose parser to handle more math and dice expressions.
 * Added support for grouping using ( ). Now you can parse dice expressions like - (2+1)d4 - (4-2).
 * Test validation for new expressions and grouping.</PackageReleaseNotes>
-    <Version>1.0.5</Version>
+    <Version>2.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -66,7 +70,6 @@ Release 1.0.1:
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
 
 </Project>
