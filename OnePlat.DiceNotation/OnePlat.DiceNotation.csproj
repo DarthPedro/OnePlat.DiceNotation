@@ -40,7 +40,7 @@ Release 1.0.1:
 * Added general purpose parser to handle more math and dice expressions.
 * Added support for grouping using ( ). Now you can parse dice expressions like - (2+1)d4 - (4-2).
 * Test validation for new expressions and grouping.</PackageReleaseNotes>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -69,7 +69,6 @@ Release 1.0.1:
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-    <PackageReference Include="StyleCop.Analyzers" Version="1.0.2" />
   </ItemGroup>
 
 </Project>
