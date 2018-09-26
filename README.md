@@ -1,5 +1,5 @@
 # OnePlat.DiceNotation
-DiceNotation library written in .NET Standard to provide dice notation parsing, evaluation, and rolling. This library is built on .NET Standard 1.4, so you can incorporate it into any of your .NET projects: UWP, WPF, Xamarin, Xamarin.Forms, .NET 4.6.2, and .NET Core 1.1. Note: we will upgrade to .NET Standard 2.0 as soon as it releases with Visual Studio and UWP, Xamarin, and .NET Core 2.0 all support using them.
+DiceNotation library written in .NET Standard to provide dice notation parsing, evaluation, and rolling. This library is built on .NET Standard 2.0, so you can incorporate it into any of your .NET projects: UWP, WPF, Xamarin, Xamarin.Forms, .NET 4.6.2, and .NET Core 2.0.
 
 Dice notation (also known as dice algebra, common dice notation, RPG dice notation, and several other titles) is a system to represent different combinations of dice in role-playing games using simple algebra-like notation such as 2d6+12.
 
@@ -12,7 +12,7 @@ Also, if you just want to try out the web application, you can find it online at
 # Installation
 This library is a NuGet package so it is easy to add to your project. To install these packages into your solution, you can use the Package Manager. In PM, please use the following commands:
 ```  
-PM > Install-Package OnePlat.DiceNotation -Version 1.0.5
+PM > Install-Package OnePlat.DiceNotation -Version 2.0.1
 ``` 
 
 To install in the Visual Studio UI, go to the Tools menu > "Manage NuGet Packages". Then search for OnePlat.DiceNotation and install it from there.
