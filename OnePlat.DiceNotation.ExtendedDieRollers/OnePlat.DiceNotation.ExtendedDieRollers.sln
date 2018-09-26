@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnePlat.DiceNotation.ExtendedDieRollers", "OnePlat.DiceNotation.ExtendedDieRollers\OnePlat.DiceNotation.ExtendedDieRollers.csproj", "{D7738C8F-230E-4D26-8C7C-FAB0B68D1E65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedDieRollers.UnitTests", "..\ExtendedDieRollers\ExtendedDieRollers.UnitTests\ExtendedDieRollers.UnitTests.csproj", "{A8AE21CE-F64D-45AA-BA5F-3B42EF9FE89C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7738C8F-230E-4D26-8C7C-FAB0B68D1E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7738C8F-230E-4D26-8C7C-FAB0B68D1E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7738C8F-230E-4D26-8C7C-FAB0B68D1E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7738C8F-230E-4D26-8C7C-FAB0B68D1E65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8AE21CE-F64D-45AA-BA5F-3B42EF9FE89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8AE21CE-F64D-45AA-BA5F-3B42EF9FE89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8AE21CE-F64D-45AA-BA5F-3B42EF9FE89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8AE21CE-F64D-45AA-BA5F-3B42EF9FE89C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B59A703-73C7-4A3F-87CD-23581857938C}
+	EndGlobalSection
+EndGlobal

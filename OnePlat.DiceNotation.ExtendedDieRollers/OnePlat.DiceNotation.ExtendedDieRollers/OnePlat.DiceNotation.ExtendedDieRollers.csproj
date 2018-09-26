@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>DarthPedro</Authors>
+    <Description>Release of new dice rollers to use with OnePlat.DiceNotation for .NET Standard 2.0. These rollers use cryptography and MathNet to use other algorithms for random number generation.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MathNet.Numerics" Version="4.5.1" />
+    <PackageReference Include="OnePlat.DiceNotation" Version="2.0.2" />
+  </ItemGroup>
+
+</Project>
