@@ -26,7 +26,7 @@ namespace DiceRoller.Mvc.ViewModels
             this.DieRollerTypes = new List<DieRollerType>
             {
                 new DieRollerType { DisplayText = "Pseudo Random [default]", Type = typeof(RandomDieRoller).ToString() },
-                new DieRollerType { DisplayText = "Secure Random", Type = typeof(SecureRandomDieRoller).ToString() },
+                new DieRollerType { DisplayText = "Crypto Random", Type = typeof(CryptoDieRoller).ToString() },
                 new DieRollerType { DisplayText = "MathNet Random", Type = typeof(MathNetDieRoller).ToString() },
             };
 

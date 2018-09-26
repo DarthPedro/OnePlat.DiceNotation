@@ -176,8 +176,8 @@
     <PackageReference Include="OnePlat.DiceNotation">
       <Version>2.0.2</Version>
     </PackageReference>
-    <PackageReference Include="OnePlat.DiceNotation.ExtendedDieRollers.PCL">
-      <Version>1.0.4</Version>
+    <PackageReference Include="OnePlat.DiceNotation.ExtendedDieRollers">
+      <Version>2.0.1</Version>
     </PackageReference>
     <PackageReference Include="WinRTXamlToolkit.UWP">
       <Version>2.3.0</Version>
