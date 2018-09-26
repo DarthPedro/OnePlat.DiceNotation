@@ -41,7 +41,7 @@ namespace OnePlat.DiceNotation.DieRoller
         #region IDieRollTracker methods
 
         /// <inheritdoc/>
-        public int TrackerDataLimit { get; } = DefaultTrackerDataLimit;
+        public int TrackerDataLimit { get; set; } = DefaultTrackerDataLimit;
 
         /// <inheritdoc/>
         public void AddDieRoll(int dieSides, int result, Type dieRoller)

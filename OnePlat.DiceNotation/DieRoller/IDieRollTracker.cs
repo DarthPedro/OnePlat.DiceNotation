@@ -33,7 +33,7 @@ namespace OnePlat.DiceNotation.DieRoller
         /// <summary>
         /// Gets the limit of roll data kept in the tracker.
         /// </summary>
-        int TrackerDataLimit { get; }
+        int TrackerDataLimit { get; set; }
 
         /// <summary>
         /// Adds the current roll to the tracking service.

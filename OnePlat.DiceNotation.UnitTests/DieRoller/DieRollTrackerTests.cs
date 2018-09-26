@@ -58,6 +58,7 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
         {
             // setup test
             IDieRollTracker t = new DieRollTracker();
+            t.TrackerDataLimit = 100000;
 
             // run test
             t.AddDieRoll(6, 4, typeof(RandomDieRoller));
