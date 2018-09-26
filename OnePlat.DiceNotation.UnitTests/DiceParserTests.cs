@@ -571,5 +571,31 @@ namespace OnePlat.DiceNotation.UnitTests
             Assert.AreEqual("DiceTerm.d6", result.Results[1].Type);
             Assert.AreEqual(7, result.Value);
         }
+
+        [TestMethod]
+        public void DiceParser_SettingCustomOperators()
+        {
+            // setup test
+            DiceParser parser = new DiceParser
+            {
+                DefaultNumDice = "2",
+                DefaultOperator = "x",
+                GroupStartOperator = "[",
+                GroupEndOperator = "]"
+            };
+
+            // run test
+            DiceResult result = parser.Parse("3d6", config, this.testRoller);
+
+            // validate results
+            Assert.IsNotNull(result);
+            Assert.AreEqual("3d6", result.DiceExpression);
+            Assert.AreEqual(3, result.Results.Count);
+            Assert.AreEqual(6, result.Value);
+            Assert.AreEqual("2", parser.DefaultNumDice);
+            Assert.AreEqual("x", parser.DefaultOperator);
+            Assert.AreEqual("[", parser.GroupStartOperator);
+            Assert.AreEqual("]", parser.GroupEndOperator);
+        }
     }
 }

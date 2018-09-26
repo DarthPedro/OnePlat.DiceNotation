@@ -380,6 +380,25 @@ namespace OnePlat.DiceNotation.UnitTests.DieRoller
             }
         }
 
+
+        [TestMethod]
+        public void DieRollTracker_LaodFromJsonTest_NoData()
+        {
+            // setup test
+            string data = "";
+
+            // run test
+            IDieRollTracker other = new DieRollTracker();
+            Task task2 = other.LoadFromJsonAsync(data);
+            task2.Wait();
+
+            Task<IList<DieTrackingData>> task3 = other.GetTrackingDataAsync("RandomDieRoller", "20");
+            task3.Wait();
+            IList<DieTrackingData> list = task3.Result;
+
+            // validate results
+            Assert.AreEqual(0, list.Count);
+        }
         [TestMethod]
         public void DieRollTracker_GetFrequencyDataTest()
         {

@@ -401,5 +401,33 @@ namespace OnePlat.DiceNotation.UnitTests.DiceTerms
             Assert.IsFalse(string.IsNullOrEmpty(result));
             Assert.AreEqual("4d6k3!6x10", result);
         }
+
+        [TestMethod]
+        public void DiceTerm_ToStringTest_NegativeScalar()
+        {
+            // setup test
+            IExpressionTerm term = new DiceTerm(1, 4, -1);
+
+            // run test
+            string result = term.ToString();
+
+            // validate results
+            Assert.IsFalse(string.IsNullOrEmpty(result));
+            Assert.AreEqual("-1d4", result);
+        }
+
+        [TestMethod]
+        public void DiceTerm_ToStringTest_FractionalScalar()
+        {
+            // setup test
+            IExpressionTerm term = new DiceTerm(1, 4, 0.5);
+
+            // run test
+            string result = term.ToString();
+
+            // validate results
+            Assert.IsFalse(string.IsNullOrEmpty(result));
+            Assert.AreEqual("1d4/2", result);
+        }
     }
 }
